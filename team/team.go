@@ -1,6 +1,7 @@
 package team
 
 import (
+	"fmt"
 	"github.com/pattack/rcss"
 )
 
@@ -18,7 +19,35 @@ func (j *janstun) Init(match rcss.Match, side rcss.Side, unum rcss.UniformNumber
 	j.side = side
 	j.match = match
 
-	// fmt.Printf("Uniform Number: %d, Mode: %s\n", unum, mode)
+	fmt.Printf("Side: %c, Uniform Number: %d, Mode: %s\n", side, unum, mode)
+}
+
+func (j *janstun) ServerParam() {
+
+}
+
+func (j *janstun) PlayerParam() {
+
+}
+
+func (j *janstun) PlayerType() {
+
+}
+
+func (j *janstun) See() {
+
+}
+
+func (j *janstun) Hear() {
+
+}
+
+func (j *janstun) SenseBody() {
+
+}
+
+func (j *janstun) Score() {
+
 }
 
 func NewTeam(name string) rcss.Team {
